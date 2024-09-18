@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import './Message.css';
 
@@ -9,5 +9,6 @@ const Message = ({text}) =>{
         </div>
     );
 }
+
 
 export default Message;

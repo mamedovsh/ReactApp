@@ -1,37 +1,26 @@
-// import logo from './logo.svg';
-// import './App.css';
-
-// function App() {
-//   return (
-//     <div className="App">
-//       <header className="App-header">
-//         <img src={logo} className="App-logo" alt="logo" />
-//         <p>
-//           Edit <code>src/App.js</code> and save to reload.
-//         </p>
-//         <a
-//           className="App-link"
-//           href="https://reactjs.org"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           Learn React
-//         </a>
-//       </header>
-//     </div>
-//   );
-// }
-
-
 import React from "react";
 
 import Message from "./Components/Message/Message";
+import Greeting from "./Components/Greeting";
+import Counter from "./Components/Counter";
+import MessageList from "./Components/Messagelist/MessageList";
+import TextDisplayForm from "./Components/TextDisplayForm";
+import CommentList from "./Components/CommentList";
 
+const messages = [
+  {id: 1, text:"Hallo  Mike"},
+  {id: 2, text:"Hallo  Niki"},
+  {id: 3, text:"Hallo  Sara"},
+  {id: 4, text:"Hallo  Misha"},
+  {id: 5, text:"Hallo  Murka"}
+];
 
 function App() {
   return (
     <div className="App">
       <Message text="Hallo!" />
+      <MessageList messages={messages}/>
+      <CommentList />
     </div>
   );
 }
