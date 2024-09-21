@@ -6,6 +6,7 @@ import Counter from "./Components/Counter";
 import MessageList from "./Components/Messagelist/MessageList";
 import TextDisplayForm from "./Components/TextDisplayForm";
 import CommentList from "./Components/CommentList";
+import TemperatureConverter from "./Components/TemperatureConverter";
 
 const messages = [
   {id: 1, text:"Hallo  Mike"},
@@ -21,6 +22,7 @@ function App() {
       <Message text="Hallo!" />
       <MessageList messages={messages}/>
       <CommentList />
+      <TemperatureConverter/>
     </div>
   );
 }
