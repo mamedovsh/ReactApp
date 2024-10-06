@@ -1,12 +1,11 @@
 import React from "react";
-
 import Message from "./Components/Message/Message";
-import Greeting from "./Components/Greeting";
-import Counter from "./Components/Counter";
 import MessageList from "./Components/Messagelist/MessageList";
-import TextDisplayForm from "./Components/TextDisplayForm";
 import CommentList from "./Components/CommentList";
 import TemperatureConverter from "./Components/TemperatureConverter";
+import TodoList from "./Components/TodoList";
+
+
 
 const messages = [
   {id: 1, text:"Hallo  Mike"},
@@ -23,6 +22,8 @@ function App() {
       <MessageList messages={messages}/>
       <CommentList />
       <TemperatureConverter/>
+      <TodoList />
+      
     </div>
   );
 }
